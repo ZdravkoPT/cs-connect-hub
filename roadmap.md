@@ -1,7 +1,11 @@
 # CS 1.6 Matchmaking Platform — Roadmap
 
 ## Repository
-- [ ] User is sending a repository for this project — waiting for the link/upload and the instructions on what to do with it
+- [x] Repository connected: github.com/ZdravkoPT/CS1.6 (private, Pawn, via GitHub connector)
+  - Contains full HLDS server tree under server/ (cstrike, addons/amxmodx default install)
+  - plugins.ini = stock AMXX defaults + whistle.amxx; no custom plugins yet
+  - CS16-Server.rar at root is a 134-byte Git LFS pointer, not the real archive
+- [ ] Waiting for the user's instructions on what to do with the repository
 
 ## Research / ideas
 - [x] Batch 3 — paid plugin shops and what buyers get (result read)
