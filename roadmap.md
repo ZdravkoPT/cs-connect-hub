@@ -1,11 +1,14 @@
 # CS 1.6 Matchmaking Platform — Roadmap
 
+## Repository
+- [ ] User is sending a repository for this project — waiting for the link/upload and the instructions on what to do with it
+
 ## Research / ideas
-- [ ] Batch 3 — paid plugin shops and what buyers get (running)
-- [ ] Batch 4 — AMX Mod X plugin threads, deep pages (running)
-- [ ] Batch 5 — event, tournament and video formats (running)
-- [ ] Batch 6 — regional communities RU/TR/GR/RO/PL/BR/ZH (running)
-- [ ] Batch 7 — player wishlists and churn reasons (running)
+- [x] Batch 3 — paid plugin shops and what buyers get (result read)
+- [x] Batch 4 — AMX Mod X plugin threads, deep pages (result read)
+- [x] Batch 5 — event, tournament and video formats (result read)
+- [x] Batch 6 — regional communities RU/TR/GR/RO/PL/BR/ZH (result read)
+- [x] Batch 7 — player wishlists and churn reasons (result read)
 - [ ] Merge all new ideas into specification v3
 - [ ] Verify no duplicate of an already-specified feature
 
