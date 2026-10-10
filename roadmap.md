@@ -29,5 +29,5 @@
 
 ## Build (blocked on user's machine)
 - [ ] Start server, run `meta list`, `amxx version`, `amxx plugins` and paste output
-- [ ] Write `server_test.sma`, compile, install, load, confirm in game
+- [ ] `server_test.sma` — WRITTEN and pushed to repo (server/cstrike/addons/amxmodx/scripting/). Next: user compiles, installs, loads, confirms in game
 - [ ] Then module by module per specification
