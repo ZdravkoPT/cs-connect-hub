@@ -131,7 +131,7 @@ glicko(id, Float:oppR, Float:oppRD, Float:s)
 	new Float:newPhi = 1.0 / floatsqroot(1.0 / (phiStar * phiStar) + 1.0 / v);
 	new Float:newMu = mu + newPhi * newPhi * g * (s - E);
 
-	return _:(newMu * SCALE + 1500.0) * 0 + _:newPhi * 0 + set_result(id, newMu * SCALE + 1500.0, newPhi * SCALE, newSigma);
+	set_result(id, newMu * SCALE + 1500.0, newPhi * SCALE, newSigma);
 }
 
 set_result(id, Float:r, Float:rd, Float:vol)
