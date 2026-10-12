@@ -30,4 +30,6 @@
 ## Build (blocked on user's machine)
 - [ ] Start server, run `meta list`, `amxx version`, `amxx plugins` and paste output
 - [ ] `server_test.sma` — WRITTEN and pushed to repo (server/cstrike/addons/amxmodx/scripting/). Next: user compiles, installs, loads, confirms in game
-- [ ] Then module by module per specification
+- [x] v0.1 pushed (abd7785): core, lobby, match, 1v1, HNS, rating, cfg, BG/EN lang — compiles 0 errors
+- [ ] User installs v0.1 and reports errors
+- [ ] Next: KZ/JumpStats, captain/draft/map vote, MySQL, trust/anti-cheat
