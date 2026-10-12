@@ -157,23 +157,19 @@ public client_disconnected(id)
 	cs_msg(0, PFX_MATCH, "%L", LANG_PLAYER, "CS_PLAYER_LEFT", get_pcvar_num(g_cvReconnect));
 }
 
+new g_rejoinTeam[33];
+
 public client_authorized(id)
 {
 	new auth[35], t;
 	get_user_authid(id, auth, charsmax(auth));
 	if (!TrieGetCell(g_leavers, auth, t))
 		return;
+	// removing the key cancels the pending forfeit for this player
 	TrieDeleteKey(g_leavers, auth);
-	for (new i = TASK_FORFEIT; i < TASK_FORFEIT + 33; i++)
-	{
-		// cancel the pending forfeit for this authid
-		if (task_exists(i)) { remove_task(i); }
-	}
-	set_task(2.0, "task_rejoin", id + 6000, auth, sizeof(auth));
 	g_rejoinTeam[id] = t;
+	set_task(2.0, "task_rejoin", id + 6000);
 }
-
-new g_rejoinTeam[33];
 
 public task_rejoin(const auth[], taskid)
 {
