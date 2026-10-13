@@ -2,18 +2,13 @@
 
 ## Repository
 - [x] Repository connected: github.com/ZdravkoPT/CS1.6 (private, Pawn, via GitHub connector)
-  - Contains full HLDS server tree under server/ (cstrike, addons/amxmodx default install)
-  - plugins.ini = stock AMXX defaults + whistle.amxx; no custom plugins yet
-  - CS16-Server.rar at root is a 134-byte Git LFS pointer, not the real archive
-- [ ] Waiting for the user's instructions on what to do with the repository
+- [x] v0.1 pushed (abd7785): core, lobby, match, 1v1, HNS, rating, cfg, BG/EN lang
+- [x] v0.2 pushed: cs16_trust, cs16_kz, cs16_jumpstats, cs16_mapvote (.sma), cs16_maps.ini, plugins-cs16.ini (trust loads before lobby)
+- [ ] User compiles the 4 new .sma with compile.exe (sandbox cannot run the 32-bit compiler), installs .amxx, starts server, reports errors
 
 ## Research / ideas
-- [x] Batch 3 — paid plugin shops and what buyers get (result read)
-- [x] Batch 4 — AMX Mod X plugin threads, deep pages (result read)
-- [x] Batch 5 — event, tournament and video formats (result read)
-- [x] Batch 6 — regional communities RU/TR/GR/RO/PL/BR/ZH (result read)
-- [x] Batch 7 — player wishlists and churn reasons (result read)
-- [ ] Merge all new ideas into specification v3
+- [x] Batches 3-7 research done (shops, AMXX threads, events/video, regional communities, wishlists)
+- [ ] Merge all new ideas into specification v3 (user not confirmed yet)
 - [ ] Verify no duplicate of an already-specified feature
 
 ## Spec additions found so far (to fold into v3)
@@ -28,8 +23,5 @@
 - [ ] Built-in server rules + admin contact panel
 
 ## Build (blocked on user's machine)
-- [ ] Start server, run `meta list`, `amxx version`, `amxx plugins` and paste output
-- [ ] `server_test.sma` — WRITTEN and pushed to repo (server/cstrike/addons/amxmodx/scripting/). Next: user compiles, installs, loads, confirms in game
-- [x] v0.1 pushed (abd7785): core, lobby, match, 1v1, HNS, rating, cfg, BG/EN lang — compiles 0 errors
-- [ ] User installs v0.1 and reports errors
-- [ ] Next: KZ/JumpStats, captain/draft/map vote, MySQL, trust/anti-cheat
+- [ ] User installs full plugin set and reports errors
+- [ ] Next: captain draft + knife duel, MySQL (nvault is stopgap), website/Discord/NextClient
