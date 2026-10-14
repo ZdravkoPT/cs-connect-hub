@@ -194,6 +194,14 @@ start_match()
 		g_ready[i] = false;
 
 	cs_set_mode(g_pendingMode);
+
+	// team matches with 6+ players go through captain draft first (draft sets WARMUP itself)
+	if (g_pendingMode != MODE_1V1 && need >= 6 && get_cvar_num("cs_draft")
+		&& callfunc_begin("draft_begin", "cs16_draft.amxx") == 1)
+	{
+		callfunc_end();
+		return;
+	}
 	cs_set_state(MS_WARMUP);
 }
 
