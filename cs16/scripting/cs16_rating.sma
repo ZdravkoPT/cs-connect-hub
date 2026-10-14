@@ -20,6 +20,19 @@ new Float:g_joinLive[33];
 new Float:g_liveStart;
 new bool:g_played[33];
 
+public plugin_natives()
+{
+	register_library("cs16_rating");
+	register_native("cs_get_rating", "_get_rating");
+}
+
+public _get_rating(plugin, params)
+{
+	new id = get_param(1);
+	if (id < 1 || id > 32) return 1500;
+	return floatround(g_r[id]);
+}
+
 public plugin_init()
 {
 	register_plugin(PLUGIN, VERSION, "CS16 Platform");
