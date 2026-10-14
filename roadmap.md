@@ -4,7 +4,7 @@
 - [x] Repository connected: github.com/ZdravkoPT/CS1.6 (private, Pawn, via GitHub connector)
 - [x] v0.1 pushed (abd7785): core, lobby, match, 1v1, HNS, rating, cfg, BG/EN lang
 - [x] v0.2 pushed: cs16_trust, cs16_kz, cs16_jumpstats, cs16_mapvote (.sma), cs16_maps.ini, plugins-cs16.ini (trust loads before lobby)
-- [ ] User compiles the 4 new .sma with compile.exe (sandbox cannot run the 32-bit compiler), installs .amxx, starts server, reports errors
+- [x] v0.3 pushed (61cd209): cs16_draft (captain + knife duel), all 11 plugins compiled .amxx
 
 ## Research / ideas
 - [x] Batches 3-7 research done (shops, AMXX threads, events/video, regional communities, wishlists)
@@ -24,4 +24,4 @@
 
 ## Build (blocked on user's machine)
 - [ ] User installs full plugin set and reports errors
-- [ ] Next: captain draft + knife duel, MySQL (nvault is stopgap), website/Discord/NextClient
+- [ ] Next: MySQL (nvault is stopgap). Website/Discord/NextClient dropped by user
